@@ -35,6 +35,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQShowcase.Routing.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQShowcase.Routing.ConsumerThree", "RabbitMQShowcase.Routing.ConsumerThree\RabbitMQShowcase.Routing.ConsumerThree.csproj", "{6F85BDF5-6717-46D3-91A0-B07F57251852}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RemoteProcedureCall", "RemoteProcedureCall", "{67E96FEF-FF9D-4014-970D-1582D395857A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQShowcase.RemoteProcedureCall.SDK.Abstraction", "RabbitMQShowcase.RemoteProcedureCall.SDK.Abstraction\RabbitMQShowcase.RemoteProcedureCall.SDK.Abstraction.csproj", "{7F7EE614-BE5C-4235-801E-C8E3D42079FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQShowcase.RemoteProcedureCall.SDK", "RabbitMQShowcase.RemoteProcedureCall.SDK\RabbitMQShowcase.RemoteProcedureCall.SDK.csproj", "{818B308C-FC73-4227-BAC3-467075498601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQShowcase.RemoteProcedureCall.BookStore", "RabbitMQShowcase.RemoteProcedureCall.BookStore\RabbitMQShowcase.RemoteProcedureCall.BookStore.csproj", "{9501B5BA-42D2-48ED-8966-671FBC87BC81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQShowcase.RemoteProcedureCall.Inventory", "RabbitMQShowcase.RemoteProcedureCall.Inventory\RabbitMQShowcase.RemoteProcedureCall.Inventory.csproj", "{47DAD02C-12DD-4FDB-88B4-1FCBA54B3A84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +99,22 @@ Global
 		{6F85BDF5-6717-46D3-91A0-B07F57251852}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F85BDF5-6717-46D3-91A0-B07F57251852}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F85BDF5-6717-46D3-91A0-B07F57251852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7EE614-BE5C-4235-801E-C8E3D42079FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7EE614-BE5C-4235-801E-C8E3D42079FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7EE614-BE5C-4235-801E-C8E3D42079FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7EE614-BE5C-4235-801E-C8E3D42079FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{818B308C-FC73-4227-BAC3-467075498601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818B308C-FC73-4227-BAC3-467075498601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818B308C-FC73-4227-BAC3-467075498601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818B308C-FC73-4227-BAC3-467075498601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9501B5BA-42D2-48ED-8966-671FBC87BC81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9501B5BA-42D2-48ED-8966-671FBC87BC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9501B5BA-42D2-48ED-8966-671FBC87BC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9501B5BA-42D2-48ED-8966-671FBC87BC81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47DAD02C-12DD-4FDB-88B4-1FCBA54B3A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47DAD02C-12DD-4FDB-88B4-1FCBA54B3A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47DAD02C-12DD-4FDB-88B4-1FCBA54B3A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47DAD02C-12DD-4FDB-88B4-1FCBA54B3A84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +132,10 @@ Global
 		{F23C58D9-A641-4CE7-BF6A-A51BF8D21981} = {A547967D-95FD-4102-AD94-B89505CD0BC7}
 		{4A666718-E126-45B6-9E3D-628F5FC8D5B4} = {A547967D-95FD-4102-AD94-B89505CD0BC7}
 		{6F85BDF5-6717-46D3-91A0-B07F57251852} = {A547967D-95FD-4102-AD94-B89505CD0BC7}
+		{7F7EE614-BE5C-4235-801E-C8E3D42079FF} = {67E96FEF-FF9D-4014-970D-1582D395857A}
+		{818B308C-FC73-4227-BAC3-467075498601} = {67E96FEF-FF9D-4014-970D-1582D395857A}
+		{9501B5BA-42D2-48ED-8966-671FBC87BC81} = {67E96FEF-FF9D-4014-970D-1582D395857A}
+		{47DAD02C-12DD-4FDB-88B4-1FCBA54B3A84} = {67E96FEF-FF9D-4014-970D-1582D395857A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {664F9774-C44C-4A2C-A7A3-F624E0585FEA}
