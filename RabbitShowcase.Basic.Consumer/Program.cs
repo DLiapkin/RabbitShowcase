@@ -20,23 +20,28 @@ namespace RabbitShowcase.Basic.Consumer
                 queue: queueName,
                 durable: false,
                 exclusive: false,
-                autoDelete: true,
+                autoDelete: false,
                 arguments: null);
 
             Console.WriteLine(" [*] Waiting for messages.");
 
             var consumer = new AsyncEventingBasicConsumer(channel);
-            consumer.ReceivedAsync += (model, ea) =>
+            consumer.ReceivedAsync += async (model, ea) =>
             {
+                Thread.Sleep(1000);
+
                 var body = ea.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
-                Console.WriteLine($" [x] Received {message}");
-                return Task.CompletedTask;
+                Console.WriteLine($" [x] Received: {message}");
+
+                await channel.BasicAckAsync(deliveryTag: ea.DeliveryTag, multiple: true);
             };
 
-            await channel.BasicConsumeAsync(queueName, autoAck: true, consumer: consumer);
+            await channel.BasicConsumeAsync(
+                queue: queueName,
+                autoAck: false,
+                consumer: consumer);
 
-            Console.WriteLine(" Press [enter] to exit.");
             Console.ReadLine();
         }
     }

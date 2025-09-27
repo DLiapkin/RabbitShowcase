@@ -10,26 +10,37 @@ namespace RabbitShowcase.Basic.Producer
     {
         static async Task Main(string[] args)
         {
-            var queueName = "letterbox";
-            var factory = new ConnectionFactory { HostName = "localhost" };
-            using var connection = await factory.CreateConnectionAsync();
-            using var channel = await connection.CreateChannelAsync();
+            var counter = 1;
+            do
+            {
+                var queueName = "letterbox";
+                var factory = new ConnectionFactory { HostName = "localhost" };
+                using var connection = await factory.CreateConnectionAsync();
+                using var channel = await connection.CreateChannelAsync();
 
-            await channel.QueueDeclareAsync(
-                queue: queueName,
-                durable: false,
-                exclusive: false,
-                autoDelete: true,
-                arguments: null);
+                await channel.QueueDeclareAsync(
+                    queue: queueName,
+                    durable: false,
+                    exclusive: false,
+                    autoDelete: false,
+                    arguments: null);
 
-            const string message = "First letter.";
-            var body = Encoding.UTF8.GetBytes(message);
+                string message = $"Letter [{counter++}]";
+                var body = Encoding.UTF8.GetBytes(message);
 
-            await channel.BasicPublishAsync(exchange: string.Empty, routingKey: queueName, body: body);
-            Console.WriteLine($" [x] Sent {message}");
+                await channel.BasicPublishAsync(
+                    exchange: string.Empty,
+                    routingKey: queueName,
+                    body: body);
 
-            Console.WriteLine(" Press [enter] to exit.");
-            Console.ReadLine();
+                Console.WriteLine($" [x] Sent: {message}");
+
+                if (!string.IsNullOrEmpty(Console.ReadLine()))
+                {
+                    break;
+                }
+            }
+            while (true);
         }
     }
 }
