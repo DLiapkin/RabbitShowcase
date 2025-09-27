@@ -1,0 +1,83 @@
+[
+  {
+    "Name": "Basic",
+    "Projects": [
+      {
+        "Path": "RabbitShowcase.Basic\\RabbitShowcase.Basic.Producer.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RabbitShowcase.Basic.Consumer\\RabbitShowcase.Basic.Consumer.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "PublishSubscribe",
+    "Projects": [
+      {
+        "Path": "RabbitMQShowcase.PublishSubscribe.Publisher\\RabbitMQShowcase.PublishSubscribe.Publisher.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RabbitMQShowcase.PublishSubscribe.ConsumerOne\\RabbitMQShowcase.PublishSubscribe.ConsumerOne.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RabbitMQShowcase.PublishSubscribe.ConsumerTwo\\RabbitMQShowcase.PublishSubscribe.ConsumerTwo.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "WorkloadBalance",
+    "Projects": [
+      {
+        "Path": "RabbitMQShowcase.WorkloadBalance.Publisher\\RabbitMQShowcase.WorkloadBalance.Publisher.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RabbitMQShowcase.WorkloadBalance.ConsumerOne\\RabbitMQShowcase.WorkloadBalance.ConsumerOne.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RabbitMQShowcase.WorkloadBalance.ConsumerTwo\\RabbitMQShowcase.WorkloadBalance.ConsumerTwo.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "Routing",
+    "Projects": [
+      {
+        "Path": "RabbitMQShowcase.Routing.Publisher\\RabbitMQShowcase.Routing.Publisher.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RabbitMQShowcase.Routing.ConsumerOne\\RabbitMQShowcase.Routing.ConsumerOne.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RabbitMQShowcase.Routing.ConsumerTwo\\RabbitMQShowcase.Routing.ConsumerTwo.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RabbitMQShowcase.Routing.ConsumerThree\\RabbitMQShowcase.Routing.ConsumerThree.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "RemoteProcedureCall",
+    "Projects": [
+      {
+        "Path": "RabbitMQShowcase.RemoteProcedureCall.BookStore\\RabbitMQShowcase.RemoteProcedureCall.BookStore.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RabbitMQShowcase.RemoteProcedureCall.Inventory\\RabbitMQShowcase.RemoteProcedureCall.Inventory.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
