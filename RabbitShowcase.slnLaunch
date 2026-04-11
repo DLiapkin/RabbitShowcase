@@ -79,5 +79,18 @@
         "Action": "Start"
       }
     ]
+  },
+  {
+    "Name": "MessageBus (MassTransit)",
+    "Projects": [
+      {
+        "Path": "RabbitShowcase.MessageBus.Example.BookStore\\RabbitShowcase.MessageBus.Example.BookStore.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RabbitShowcase.MessageBus.Example.Inventory\\RabbitShowcase.MessageBus.Example.Inventory.csproj",
+        "Action": "Start"
+      }
+    ]
   }
 ]

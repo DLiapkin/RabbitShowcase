@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\RabbitMQShowcase.MessageBus.Broker.Abstraction\RabbitMQShowcase.MessageBus.Broker.Abstraction.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+	    <PackageReference Include="MassTransit" Version="9.1.0" />
+	    <PackageReference Include="MassTransit.RabbitMQ" Version="9.1.0" />
+	    <PackageReference Include="RabbitMQ.Client" Version="7.2.0" />
+    </ItemGroup>
+
+</Project>

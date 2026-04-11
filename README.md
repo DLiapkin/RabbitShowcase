@@ -37,6 +37,14 @@ This repository contains examples of using RabbitMQ in .NET 8. There are 5 examp
             In this example there are two APIs: BookStore API and Inventory API. BookStore API can request a collection of books from Inventory API and wait for the result.
         </p>
     </li>
+    <li>
+        <h3>Message Bus</h3>
+        <p>Terms: MassTransit</p>
+        <p>
+            Not exactly pure RabbitMQ scenario showcase. <br>
+            In this example there are two APIs: BookStore API and Inventory API. Used BookRequestConsumer to handle request and MessageBus to send it through MassTransit.
+        </p>
+    </li>
 </ul>
 
 ## Requirements
